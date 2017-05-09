@@ -1,4 +1,5 @@
 <!-- Begin MailChimp Signup Form -->
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 <style type="text/css">
@@ -6,18 +7,24 @@
     .headline {
         text-align: center;
         font-size: 40px;
-        margin-left: 35px;
         margin-bottom: 15px;
     }
 
     #mc_embed_signup {
+        width: 480px;
+        margin: 0 auto;
+    }
 
+    @media screen and (max-width: 480px) {
+        #mc_embed_signup {
+            width: 100%;
+        }
     }
 
     #mc-embedded-subscribe {
         border: none;
         background-color: #001f3f;
-        font-family: "Poiret One";
+        font-family: "Poiret One", sans-serif;
     }
 
     .align-center {
@@ -33,7 +40,6 @@
     }
 
     input {
-        color: red;
         font-family: inherit;
         text-align: center;
     }
@@ -62,41 +68,32 @@
         color: #001f3f;
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         font-size: 20px;
-        width: 270px;
     }
 
     .email:focus {
         box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(255, 255, 255, 0.15);
-        outline: none;
         background: #001f3f;
         background: rgba(255, 255, 255, 0.4);
         outline: solid 1px #001f3f;
     }
 
-    .grid {
+    .center-image {
+        display: block;
+        width: 100%;
+        max-width: 800px;
         margin: 0 auto;
-        max-width: 1200px;
+    }
+
+    .header-logo {
         width: 100%;
     }
 
-    .row {
+    .collage {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        padding-right: 5px;
-        margin-top: 15%;
-        position: absolute;
-    }
-
-    .col {
-        width: 35%;
-        align-content: center;
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
     }
 </style>
+
+<img src="header_logo.png" class="header-logo center-image">
 
 <div id="mc_embed_signup" class="grid">
     <div class="row">
@@ -108,7 +105,6 @@
                   target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
                     <div class="mc-field-group align-center">
-                        <!-- MA EI SAA ARU, KAS SEE ON koht kuhu emaili kirjutatakse-->
                         <input type="email" placeholder="Email Address" value="" name="EMAIL" class="required email"
                                id="mce-EMAIL">
                     </div>
@@ -118,7 +114,6 @@
                     </div>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 
-                    <!-- VÕI HOOPIS SEE ON koht kuhu emaili kirjutatakse. MIKS NEID ÜLDSE KAKS ON?-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true">
                         <input type="text" name="b_7e5b99f46e5f1810a88009f21_d4b81d7cf2" tabindex="-1" value="">
                     </div>
@@ -131,6 +126,9 @@
     </div>
     <div class="col"></div>
 </div>
+
+<img src="collage.jpeg" class="collage center-image">
+
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 <script type='text/javascript'>(function ($) {
     window.fnames = new Array();
